@@ -1,0 +1,161 @@
+body {
+    background-color: #e5e5e5;
+  }
+
+  ::-webkit-scrollbar {
+    display: none; /* O menu continua scrollando no desktop e celular, mas o scroll não aparece  */        
+  }
+
+  .disabled {
+    background-color: #cbcbcb;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  
+  .menu-superior {
+    background-color: #cf2b2b;
+    width: 414px;
+    height: 92px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  
+  .logo {
+    width: 248px;
+    height: 44px;
+    margin-top: 8px;
+    margin-left: 21px;
+  }
+  
+  .logo h1 {
+    font-family: righteous;
+    font-weight: 400;
+    font-size: 44px;
+    color: #ffffff;
+  }
+  
+  .logo p {
+    font-family: roboto;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .titulo-prato {
+    width: 250px;
+    height: 25px;
+    margin-top: 123px;
+    margin-left: 19px;
+    font-family: righteous;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+  }
+  
+  .menu-geral-prato {
+    width: 414px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  .menu-prato {
+    background-color: #ffffff;
+    width: 172px;
+    height: 216px;
+    margin-top: 17px;
+    margin-left: 19px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 10px -4px #00000040;
+  }
+  
+  .selecionado {
+    box-shadow: 0px 0px 0px 5px #32B72F inset;
+  }
+  
+  .menu-prato img {
+    margin-top: 18px;
+    margin-left: 14px;
+    margin-right: 14px;
+  }
+  
+  .menu-prato h1 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+  
+  .menu-prato h2 {
+    font-family: roboto;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 14px;
+  }
+  
+  .menu-prato p {
+    font-family: roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 14px;
+    color: #a6a6a6;
+  }
+  
+  .espaco-lateral {
+    margin-top: 17px;
+    margin-left: 19px;
+  }
+  
+  .titulo-bebida {
+    width: 231px;
+    height: 25px;
+    margin-top: 27px;
+    margin-left: 19px;
+    font-family: righteous;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+  }
+  
+  .titulo-sobremesa {
+    width: 320px;
+    height: 25px;
+    margin-top: 27px;
+    margin-left: 19px;
+    font-family: righteous;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333333;
+  }
+  
+  .menu-geral-sobremesa {
+    width: 414px;
+    display: flex;
+    overflow-x: scroll;
+    margin-bottom: 110px;
+  }
+  
+  .barra-inferior {
+    width: 414px;
+    height: 92px;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+  }
+  
+  button {
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background-color: #32B72F;
+    margin: 15px auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
