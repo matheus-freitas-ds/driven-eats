@@ -11,12 +11,16 @@ let precoSobremesa = 0;
 function selecionarPrato(nomeClasse, dadosPrato) {
   const seletor = nomeClasse;
   const opcao = document.querySelector(seletor);
+  const checkOpcao = document.querySelector(seletor + " ion-icon");
 
   if (temPrato) {
     const opcaoSelecionada = document.querySelector(".selecionado.prato");
+    const checkSelecionado = document.querySelector(".selecionado.prato ion-icon");
+    checkSelecionado.classList.toggle("escondido")
     opcaoSelecionada.classList.remove("selecionado");
   }
   opcao.classList.toggle("selecionado");
+  checkOpcao.classList.toggle("escondido");
   pratoEscolhido = dadosPrato.nome;
   precoPrato = dadosPrato.preco;
   temPrato = true;
@@ -26,11 +30,15 @@ function selecionarPrato(nomeClasse, dadosPrato) {
 function selecionarBebida(nomeClasse, dadosBebida) {
   const seletor = nomeClasse;
   const opcao = document.querySelector(seletor);
+  const checkOpcao = document.querySelector(seletor + " ion-icon");
   if (temBebida) {
     const opcaoSelecionada = document.querySelector(".selecionado.bebida");
+    const checkSelecionado = document.querySelector(".selecionado.bebida ion-icon");
+    checkSelecionado.classList.toggle("escondido");
     opcaoSelecionada.classList.remove("selecionado");
   }
   opcao.classList.toggle("selecionado");
+  checkOpcao.classList.toggle("escondido");
   bebidaEscolhida = dadosBebida.nome;
   precoBebida = dadosBebida.preco;
   temBebida = true;
@@ -40,11 +48,15 @@ function selecionarBebida(nomeClasse, dadosBebida) {
 function selecionarSobremesa(nomeClasse, dadosSobremesa) {
   const seletor = nomeClasse;
   const opcao = document.querySelector(seletor);
+  const checkOpcao = document.querySelector(seletor + " ion-icon");
   if (temSobremesa) {
     const opcaoSelecionada = document.querySelector(".selecionado.sobremesa");
+    const checkSelecionado = document.querySelector(".selecionado.sobremesa ion-icon");
+    checkSelecionado.classList.toggle("escondido");
     opcaoSelecionada.classList.remove("selecionado");
   }
   opcao.classList.toggle("selecionado");
+  checkOpcao.classList.toggle("escondido");
   sobremesaEscolhida = dadosSobremesa.nome;
   precoSobremesa = dadosSobremesa.preco;
   temSobremesa = true;
